@@ -1,0 +1,27 @@
+h1{
+ color:black;
+}
+.btn-size{
+  border-radius:50% ;
+  padding: 0px 0px !important; 
+  height:50px;
+  width:50px;
+  text-align:center;
+  margin-right: 15px;  
+  background-color:rgba(220, 98, 13, 0.5);
+  border:none;
+
+}
+.btn-size:hover{
+  background-color:rgba(220, 98, 13);
+}
+.btn-add{
+  background-color:#DC620D;
+}
+.btn{
+  margin-left: 20px;
+}
+.btn-read{
+  background-color: #DC620D;
+  margin:0 !important;
+}
