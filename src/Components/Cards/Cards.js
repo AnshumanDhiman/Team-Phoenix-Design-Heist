@@ -1,200 +1,36 @@
 import './Cards.css'
-
-import image from '../../assets/images/img1.png'
+import data from '../data'
+import value from '../../assets/images/img1.png';
 import { Row, Col, Card } from 'antd';
 
 
 
 function Cards(props){
+  
     return (
-        <>
-        <Row className='row-edit'>
-      <Col span={6} className='col-edit'>   
-    
-       <Card
+      <>
+       <Row className='row-edit'>
+      {data.map((val) => {
+        return (
+          <Col span={6} className='col-edit'> 
+          <Card
     hoverable
     style={{ width: 250 }}
     className='card-edit'
-    cover={<img alt="example" src={image} />}
+    cover={<img src={value} alt="example" />}
   >
-  <p className='rating-edit'>4.3 ★ | 40.9K</p>
+  <p className='rating-edit'> {val.rating}</p>
   </Card>
   <br/>
-  <h2>Data is here</h2>
-  <p>Hello I am data</p>
-  <p>Rs. 1499</p>
+  <h2>{val.name}</h2>
+   <p>{val.description}</p>
+  <p>{val.price}</p>
   </Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  </Row>
-  <Row className='row-edit'>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  </Row>
-  <Row className='row-edit'>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  <Col span={6} className='col-edit'>   
-    
-    <Card
- hoverable
- style={{ width: 250 }}
- className='card-edit'
- cover={<img alt="example" src={image} />}
->
-<p className='rating-edit'>4.3 ★ | 40.9K</p>
-</Card>
-<br/>
-<h2>Data is here</h2>
-<p>Hello I am data</p>
-<p>Rs. 1499</p>
-</Col>
-  </Row>
-        </>    )
+      );
+      })}
+      </Row>
+      </>
+    )
 } 
 
 export default Cards;
