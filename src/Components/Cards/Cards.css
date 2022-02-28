@@ -1,0 +1,21 @@
+.row-edit {
+    text-align: left;
+    padding: 1% 4%;
+}
+
+.col-edit {
+    line-height: 0.5;
+}
+
+.card-edit {
+    height: 80%;
+    background-color: rgba(220, 98, 13, 0.5);
+    padding: 0% !important;
+}
+
+.rating-edit {
+    padding: 2%;
+    margin-right: 55%;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.57);
+}
